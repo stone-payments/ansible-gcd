@@ -1,0 +1,5 @@
+---
+docker_host: /var/run/docker.sock
+sweep_interval: 1
+remove_images: true
+remove_healthy_containers_exited: true

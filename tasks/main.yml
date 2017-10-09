@@ -1,0 +1,12 @@
+---
+- name: Up gcd
+  docker_container:
+    name: gcd
+    image: guiferpa/gcd
+    state: started
+    env:
+      GCD_DOCKER_HOST: "{{ docker_host }}"
+      GCD_SWEEP_INTERVAL: "{{ sweep_interval }}"
+      GCD_REMOVE_HEALTHY_CONTAINERS_EXITED: "{{ remove_healthy_containers_exited }}"
+    volumes:
+      - "{{ docker_host }}:{{ docker_host }}"
