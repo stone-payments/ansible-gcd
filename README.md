@@ -1,4 +1,4 @@
-gcd
+stone-payments.gcd
 =========
 
 Ansible role to install gcd
