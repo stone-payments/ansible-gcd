@@ -1,4 +1,4 @@
-gcd
+stone-payments.gcd
 =========
 
 Ansible role to install gcd
@@ -15,5 +15,5 @@ Author Information
 -   E-mail: guiferpa@gmail.com 
 -   GitHub: @gpaixao
 
-Contribute Information
+Contributor Information
 ----------------------
