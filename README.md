@@ -15,5 +15,5 @@ Author Information
 -   E-mail: guiferpa@gmail.com 
 -   GitHub: @gpaixao
 
-Contribute Information
+Contributor Information
 ----------------------
