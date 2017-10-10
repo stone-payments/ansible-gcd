@@ -1,5 +1,5 @@
 ---
-- name: Up gcd
+- name: up gcd
   docker_container:
     name: gcd
     image: guiferpa/gcd
