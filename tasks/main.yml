@@ -3,6 +3,7 @@
   docker_container:
     name: gcd
     image: guiferpa/gcd
+    pull: true
     state: started
     env:
       GCD_DOCKER_HOST: "{{ gcd_docker_host }}"
