@@ -5,6 +5,7 @@
     image: guiferpa/gcd
     pull: true
     state: started
+    security_opts: "label:disabled"
     env:
       GCD_DOCKER_HOST: "{{ gcd_docker_host }}"
       GCD_SWEEP_INTERVAL: "{{ gcd_sweep_interval }}"
