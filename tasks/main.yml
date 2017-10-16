@@ -9,4 +9,4 @@
       GCD_SWEEP_INTERVAL: "{{ gcd_sweep_interval }}"
       GCD_REMOVE_HEALTHY_CONTAINERS_EXITED: "{{ gcd_remove_healthy_containers_exited }}"
     volumes:
-      - "{{ gcd_docker_host }}:{{ gcd_docker_host }}"
+      - "{{ gcd_sock_volume }}:{{ gcd_sock_volume }}"
