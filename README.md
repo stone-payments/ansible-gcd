@@ -1,19 +1,29 @@
-stone-payments.gcd
-=========
+# stone-payments.gcd
 
-Ansible role to install gcd
+Ansible role to install and configure [gcd](https://github.com/stone-payments/gcd).
 
-License
--------
+## Usage
 
-MIT
+### Quickstart
+```yaml
+- name: install gcd
+  hosts: all
+  roles: stone-payments.gcd
+```
 
-Author Information
-------------------
+### Custom setup
+```yaml
+- name: install gcd
+  hosts: all
+  roles: stone-payments.gcd
+  vars:
+    docker_host: "/var/run/docker.sock"
+    sweep_interval: "120"
+    remove_healthy_containers_exited: false
+```
 
-#### Guilherme Paixão 
--   E-mail: guiferpa@gmail.com 
--   GitHub: @gpaixao
+## Contributing
+Just open a PR.
 
-Contributor Information
-----------------------
+## License
+This role is distributed under the MIT license.
