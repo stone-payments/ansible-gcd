@@ -5,10 +5,10 @@
     image: guiferpa/gcd
     pull: true
     state: started
-    security_opts: "label:disabled"
+    privileged: true
     env:
       GCD_DOCKER_HOST: "{{ gcd_docker_host }}"
       GCD_SWEEP_INTERVAL: "{{ gcd_sweep_interval }}"
       GCD_REMOVE_HEALTHY_CONTAINERS_EXITED: "{{ gcd_remove_healthy_containers_exited }}"
     volumes:
-      - "{{ gcd_sock_volume }}:{{ gcd_sock_volume }}:Z"
+      - "{{ gcd_sock_volume }}:{{ gcd_sock_volume }}:rw"
