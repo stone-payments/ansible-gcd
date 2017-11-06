@@ -1,6 +1,6 @@
 ---
 gcd_sock_volume: /var/run/docker.sock
 gcd_docker_host: unix:///var/run/docker.sock
-gcd_sweep_interval: 1
+gcd_sweep_interval: 86400
 gcd_remove_images: true
 gcd_remove_healthy_containers_exited: true
