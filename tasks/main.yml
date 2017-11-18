@@ -2,7 +2,7 @@
 - name: up gcd
   docker_container:
     name: gcd
-    image: guiferpa/gcd
+    image: "{{ gcd_docker_image }}"
     pull: true
     state: started
     privileged: true
