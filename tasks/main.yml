@@ -11,4 +11,4 @@
       GCD_SWEEP_INTERVAL: "{{ gcd_sweep_interval }}"
       GCD_REMOVE_HEALTHY_CONTAINERS_EXITED: "{{ gcd_remove_healthy_containers_exited }}"
     volumes:
-      - "{{ gcd_sock_volume }}:{{ gcd_sock_volume }}:rw"
+      - "{{ gcd_sock_volume_src }}:{{ gcd_sock_volume_dst }}:rw"

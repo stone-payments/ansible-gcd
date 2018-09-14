@@ -1,5 +1,6 @@
 ---
-gcd_sock_volume: /var/run/docker.sock
+gcd_sock_volume_src: /var/run/docker.sock
+gcd_sock_volume_dst: /var/run/docker.sock
 gcd_docker_host: unix:///var/run/docker.sock
 gcd_sweep_interval: 86400
 gcd_remove_images: true
